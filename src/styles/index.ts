@@ -26,11 +26,12 @@ font-weight: bold;
 color: #666666;
 border-color: #666666;
 width: 100%;
+margin-bottom: 15px;
 `
 
 export const BotaoAdicionar = styled(Link)`
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
   padding: 8px 12px;
   border: none;
@@ -46,5 +47,35 @@ export const BotaoAdicionar = styled(Link)`
     background-color: #00BFFF;
   }
 `
+export const Botao = styled.button`
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  display: inline-block;
+  margin-right: 15px;
+  background-color: #2f3640;
+  &:hover {
+    background-color: #4b5c74;
+  }
+`
+export const BotaoSalvar = styled(Botao)`
+background-color: #44BD32;
+&:hover {
+  background-color: #1feb00;
+}
+`
+export const BotaoCancelar = styled(Botao)`
+background-color: #C23616;
+&:hover {
+  background-color: #ff3204;
+}
+`
+
+
 
 export default EstiloGlobal
